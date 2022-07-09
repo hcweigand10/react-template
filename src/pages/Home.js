@@ -32,7 +32,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="#" class="icon-link">
+                            <a href="/" class="icon-link">
                             Call to action
                             </a>
                         </div>
@@ -45,7 +45,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="#" class="icon-link">
+                            <a href="/" class="icon-link">
                             Call to action
                             </a>
                         </div>
@@ -58,7 +58,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="#" class="icon-link">
+                            <a href="/" class="icon-link">
                             Call to action
                             </a>
                         </div>
