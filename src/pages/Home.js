@@ -6,6 +6,7 @@ import bradFace from "../images/brad-headshot.jpeg"
 
 const Home = () => {
 
+    
     return (
         <div>
             <div class="col-xxl-8 px-4 py-5 text-light" id="home-background">
