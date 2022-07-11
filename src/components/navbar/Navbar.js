@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link  } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import "./navbar.css"
 
 
@@ -10,22 +8,6 @@ const Navbar = () => {
   const [activePage, setActivePage] = useState("home")
   const [collapse, setCollapse] = useState(false)
   
-  // const styles = {
-
-  //   brand: {
-  //     color: (activePage === "home") ? "white" : "lightGray",
-
-  //   },
-  //   blogLink: {
-  //     color: (activePage === "blog") ? "white" : "lightGray",
-  //   },
-  //   contactLink: {
-  //     color: (activePage === "contact") ? "white" : "lightGray",
-  //   },
-  //   icon: {
-  //     color: "lightGray",
-  //   }
-  // }
 
   const handlePageChange = (page) => {
     setActivePage(page)
@@ -73,21 +55,6 @@ const Navbar = () => {
           {/* <!-- Left links --> */}
         </div>
         {/* <!-- Collapsible wrapper --> */}
-
-        {/* <!-- Right elements --> */}
-        <div className="d-flex align-items-center">
-
-          {/* Socials */}
-          <a className="text-reset me-3" href="https://instagram.com" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon className="custom-icon insta" icon={faInstagram}/>
-          </a>
-          <a className="text-reset me-3" href="https://twitter.com" target="_blank" rel="noreferrer">
-            <FontAwesomeIcon className="custom-icon twitter" icon={faTwitter}/>
-          </a>
-
-
-          
-        </div>
 
       </div>
     </nav>

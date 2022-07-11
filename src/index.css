@@ -17,31 +17,23 @@ code {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
 }
 
 #override .btn-custom-effect1 {
-  transition: all 0.2s linear 0s
+  transition: all 0.4s linear 0s;
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 2em;
 }
 
-
 #override .btn-custom-effect1:before {
-  content: "\f178";
-  font-size: 15px;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: 0;
-  top: 0;
-  opacity: 0;
-  height: 100%;
-  width: 40px;
-  transition: all 0.2s linear 0s;
+  transition: all 0.4s linear 0s
 }
 
 #override .btn-custom-effect1:hover {
-  text-indent: -20px;
+  background-color: blue;
+  color: white;
 }
 
 #override .btn-custom-effect1:hover:before {

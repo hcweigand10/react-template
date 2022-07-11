@@ -5,18 +5,10 @@ import bradFace from "../images/brad-headshot.jpeg"
 
 
 const Home = () => {
-
-    const handleHoverCall = (element, isHover) => {
-        if (isHover) {
-            document.getElementById(element).textContent = "Learn More→"
-        } else {
-            document.getElementById(element).textContent = "Learn More  "
-        }
-    }
     
     return (
         <div>
-            <div class="col-xxl-8 px-4 py-5 text-light" id="home-background">
+            <div class="px-4 py-5 text-light" id="home-background">
                 <div class="row flex-lg-row align-items-center g-5 py-5">
                     <div class="col-10 col-sm-8 col-lg-6">
                         <img src={bradFace} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="300" loading="lazy"/>
@@ -40,9 +32,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="/" class="btn btn-primary btn-custom-effect1" id="service-1-call" 
-                            onMouseEnter={() => handleHoverCall("service-1-call", true)}
-                            onMouseLeave={()=> handleHoverCall("service-1-call", false)}>
+                            <a href="/" class="btn btn-white btn-custom-effect1" id="service-1-call" >
                             Learn More  
                             </a>
                         </div>
@@ -55,9 +45,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="/" class="btn btn-primary btn-custom-effect1" id="service-1-call" 
-                            onMouseEnter={() => handleHoverCall("service-2-call", true)}
-                            onMouseLeave={()=> handleHoverCall("service-2-call", false)}>
+                            <a href="/" class="btn btn-white btn-custom-effect1" id="service-1-call" >
                             Learn More  
                             </a>
                         </div>
@@ -70,9 +58,7 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="/" class="btn btn-primary btn-custom-effect1" id="service-1-call" 
-                            onMouseEnter={() => handleHoverCall("service-3-call", true)}
-                            onMouseLeave={()=> handleHoverCall("service-3-call", false)}>
+                            <a href="/" class="btn btn-white btn-custom-effect1" id="service-1-call" >
                             Learn More  
                             </a>
                         </div>
