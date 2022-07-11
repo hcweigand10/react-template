@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link  } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import "./Navbar.css"
+import "./navbar.css"
 
 
 const Navbar = () => {

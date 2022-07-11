@@ -6,6 +6,13 @@ import bradFace from "../images/brad-headshot.jpeg"
 
 const Home = () => {
 
+    const handleHoverCall = (element, isHover) => {
+        if (isHover) {
+            document.getElementById(element).textContent = "Learn More→"
+        } else {
+            document.getElementById(element).textContent = "Learn More  "
+        }
+    }
     
     return (
         <div>
@@ -33,8 +40,10 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="/" class="icon-link">
-                            Call to action
+                            <a href="/" class="btn btn-primary btn-custom-effect1" id="service-1-call" 
+                            onMouseEnter={() => handleHoverCall("service-1-call", true)}
+                            onMouseLeave={()=> handleHoverCall("service-1-call", false)}>
+                            Learn More  
                             </a>
                         </div>
                     </div>
@@ -46,8 +55,10 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="/" class="icon-link">
-                            Call to action
+                            <a href="/" class="btn btn-primary btn-custom-effect1" id="service-1-call" 
+                            onMouseEnter={() => handleHoverCall("service-2-call", true)}
+                            onMouseLeave={()=> handleHoverCall("service-2-call", false)}>
+                            Learn More  
                             </a>
                         </div>
                     </div>
@@ -59,8 +70,10 @@ const Home = () => {
                                 </div>
                             </div>
                             <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                            <a href="/" class="icon-link">
-                            Call to action
+                            <a href="/" class="btn btn-primary btn-custom-effect1" id="service-1-call" 
+                            onMouseEnter={() => handleHoverCall("service-3-call", true)}
+                            onMouseLeave={()=> handleHoverCall("service-3-call", false)}>
+                            Learn More  
                             </a>
                         </div>
                     </div>
