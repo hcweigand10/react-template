@@ -1,7 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faBook, faSign } from '@fortawesome/free-solid-svg-icons'
-import bradFace from "../images/brad-headshot.jpeg"
 
 
 const Home = () => {
@@ -10,13 +9,13 @@ const Home = () => {
         <div>
             <div class="px-4 py-5 text-light" id="home-background">
                 <div class="row flex-lg-row align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6">
+                    {/* <div class="col-10 col-sm-8 col-lg-6">
                         <img src={bradFace} class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="300" loading="lazy"/>
                         
-                    </div>
+                    </div> */}
                     <div class="col-lg-6">
-                        <h1 class="display-5 fw-bold lh-1 mb-3">Bradley Dosch</h1>
-                        <p class="lead">Liscensed Realtor</p>
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Joe Smith</h1>
+                        <p class="lead">President of the United States</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         </div>
                     </div>

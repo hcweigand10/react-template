@@ -5,9 +5,8 @@ import "./navbar.css"
 
 const Navbar = () => {
   
-  const [activePage, setActivePage] = useState("home")
+  const [activePage, setActivePage] = useState(window.location.pathname)
   const [collapse, setCollapse] = useState(false)
-  
 
   const handlePageChange = (page) => {
     setActivePage(page)
@@ -35,21 +34,21 @@ const Navbar = () => {
           <i className="fas fa-bars"></i>
         </button>
           {/* <!-- Navbar brand --> */}
-          <Link className="navbar-brand mt-lg-0 p-2" to="/" onClick={() => handlePageChange("home")}>
-            Dosch Realty
+          <Link className="navbar-brand mt-lg-0 p-2" to="/" onClick={() => handlePageChange("/home")}>
+            Title
           </Link>
         {/* <!-- Collapsible wrapper --> */}
         <div className={(collapse) ? "navbar-collapse" : "collapse navbar-collapse"} id="navbarSupportedContent">
           {/* <!-- Left links --> */}
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className={(activePage==="home") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/" onClick={() => handlePageChange("home")}>Home</Link>
+              <Link className={(activePage==="/home") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/" onClick={() => handlePageChange("/home")}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link className={(activePage==="blog") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/blog" onClick={() => handlePageChange("blog")}>Blog</Link>
+              <Link className={(activePage==="/blog") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/blog" onClick={() => handlePageChange("/blog")}>Blog</Link>
             </li>
             <li className="nav-item">
-              <Link className={(activePage==="contact") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/contact" onClick={() => handlePageChange("contact")}>Contact</Link>
+              <Link className={(activePage==="/contact") ? "nav-link custom-link-active" : "nav-link custom-link"} to="/contact" onClick={() => handlePageChange("/contact")}>Contact</Link>
             </li>
           </ul>
           {/* <!-- Left links --> */}
