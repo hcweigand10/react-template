@@ -23,6 +23,14 @@ code {
   width: 100%;
 }
 
+#override #profile-pic {
+  border-radius: 50%;
+}
+
+#override .home-title {
+  text-shadow: 1px 1px 2px black;
+}
+
 #override .btn-custom-effect1 {
   transition: all 0.4s linear 0s;
   border: 1px solid blue;
