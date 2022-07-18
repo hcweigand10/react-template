@@ -1,4 +1,7 @@
 import React from "react"
+import { faEnvelope, faPhone, faHome } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "./footer.css"
 
 
@@ -8,57 +11,89 @@ const Footer = () => {
 
     return (
         
-        <footer class="d-flex flex-wrap justify-content-center align-items-center p-3 border-top bg-dark">
-            <div class="col-md-4 d-flex align-items-center text-light mb-0">
-                <a href="/" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <i class="fab fa-facebook"></i>
-                    <span class="text-muted"> © 2022 Weigand Design, Inc</span>
-                </a>
-            </div>
+        <footer class="footer mt-auto">
+             <div class="container col-md-10 col-lg-8 col-xl-7 p-3 pb-0">
+            {/* <!-- Section: Links --> */}
+            <section class="">
+                {/* <!--Grid row--> */}
+                <div class="row">
+                {/* <!-- Grid column --> */}
+                <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-2">
+                    <h4 class="text-uppercase text-center mb-2 font-weight-bold">
+                    Connect
+                    </h4>
+                    <div className="">
+                        <ul class="nav list-unstyled d-flex justify-content-center align-items-center">
+                            <li class="mx-2"> 
+                                <a
+                                    class="btn btn-floating m-2 btn-custom"
+                                    style={{backgroundColor: "#0072b1"}}
+                                    href="https://www.linkedin.com/in/henryweigand/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button">
+                                    <FontAwesomeIcon icon={faLinkedin}/>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a
+                                    class="btn btn-floating m-2 btn-custom"
+                                    style={{backgroundColor: "black", color: "white"}}
+                                    href="https://github.com/hcweigand10/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button">
+                                    <FontAwesomeIcon icon={faGithub}/>
+                                </a>
+                            </li>
+                            <li class="mx-2">
+                                <a
+                                    class="btn btn-floating m-2 btn-custom"
+                                    style={{backgroundColor: "red", color: "white"}}
+                                    href="mailto:henryweigand10@gmail.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    role="button">
+                                    <FontAwesomeIcon icon={faEnvelope}/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                {/* <!-- Grid column --> */}
 
-            <div className="mb-0 mt-1 d-flex">
-                <ul class="nav list-unstyled d-flex">
-                    <li class="ms-3">
-                        <a
-                            class="btn btn-floating m-2 btn-custom"
-                            style={{backgroundColor: "#0072b1"}}
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                    </li>
-                    <li class="ms-3">
-                        <a
-                            class="btn btn-floating m-2 btn-custom" id="btn-instagram"
-                            style={{backgroundColor: "#E1306C", color: "white"}}
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-instagram"></i
-                        ></a>
-                    </li>
-                    {/* <li class="ms-3">
-                        <a
-                            class="btn btn-floating m-2 btn-custom"
-                            style={{backgroundColor: "#3b5998"}}
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-facebook"></i
-                        ></a>
-                    </li> */}
-                    <li class="ms-3">
-                        <a
-                            class="btn btn-floating m-2 btn-custom"
-                            style={{backgroundColor: "#1DA1F2"}}
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                    </li>
-                </ul>
+                <hr class="w-100 clearfix d-md-none" />
+                <div class="col-md-5 col-lg-5 col-xl-5 mx-auto mb-2">
+                    <h4 class="text-uppercase text-center mb-2 font-weight-bold">
+                    Contact
+                    </h4>
+                    <ul class="text-center list-unstyled align-items-center">
+                        <li className="mb-1"><FontAwesomeIcon icon={faHome}/> Seattle, WA, US</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faEnvelope}/> henryweigand10@gmail.com</li>
+                        <li className="mb-1"><FontAwesomeIcon icon={faPhone}/> +1 206-349-9260</li>
+                    </ul>
+                </div>
+                {/* <!-- Grid column --> */}
+                </div>
+                {/* <!--Grid row--> */}
+            </section>
+            {/* <!-- Section: Links --> */}
+            </div>
+            {/* <!-- Grid container --> */}
+
+            {/* <!-- Copyright --> */}
+            <div
+                class="text-center p-3"
+                style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}
+                >
+            © 2022 Copyright: &nbsp;
+            <a class="text-white" href="https://henryweigand.com/" style={{textIndent: "10px"}}>henryweigand.com</a>
             </div>
         </footer>
     )
 }
 
+
+                 
 
 export default Footer
